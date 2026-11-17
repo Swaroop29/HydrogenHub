@@ -1,2 +1,0 @@
-Please install all the packages required and then run the code by opening command prompt in this folder and then running " npm run start ". 
-Please note this project is build on react and node.js so please install the required packages accordingly
