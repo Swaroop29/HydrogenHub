@@ -4,7 +4,11 @@
 
 HydrogenHub is a geospatial cost model and interactive map for green hydrogen supply in the United Kingdom. It finds the lowest-cost place to produce hydrogen from wind and solar, and the cheapest way to deliver it as liquid hydrogen (LH2) to eight demand centres: London, Birmingham, Manchester, Edinburgh, Glasgow, Swansea, Cardiff and Exeter.
 
-> **Paper:** _link coming soon_
+> **Report:** Patil, S. (2024). _Green Hydrogen Model: Geospatial Cost Optimization and Visualization for the United Kingdom._ Zenodo. https://zenodo.org/records/24286217
+
+![London LH2 trucking LCOH map](<Project/Data_main/Resources/UK/London LH2 trucking LCOH.png>)
+
+_Levelised cost of delivering liquid hydrogen to London by truck, for each hexagon where it could be produced (€/kg)._
 
 ---
 
@@ -21,7 +25,7 @@ The model builds on the open-source [GeoH2](https://github.com/ClimateCompatible
 
 ## Key results
 
-| Demand centre | Lowest delivered cost (£/kg LH2) | Production at best site (£/kg) | Transport and conversion (£/kg) |
+| Demand centre | Lowest delivered cost (€/kg LH2) | Production at best site (€/kg) | Transport and conversion (€/kg) |
 | --- | --- | --- | --- |
 | London | 18.26 | 5.00 | 13.23 |
 | Birmingham | 19.51 | 5.01 | 14.48 |
@@ -32,10 +36,16 @@ The model builds on the open-source [GeoH2](https://github.com/ClimateCompatible
 | Cardiff | 33.75 | 5.08 | 28.64 |
 | Exeter | 37.00 | 5.10 | 31.88 |
 
-- **Delivery, not production, drives cost.** Production is about £5/kg at the best site and varies little. Transport and conversion make up 72 to 86 per cent of the delivered cost.
+- **Delivery, not production, drives cost.** Production is about €5/kg at the best site and varies little. Transport and conversion make up 72 to 86 per cent of the delivered cost.
 - **One site wins for every city.** The same coastal hexagon (`85195a2bfffffff`) is the cheapest place to produce hydrogen for all eight demand centres.
 - **Trucking usually beats pipelines**, in 59 to 73 per cent of cells, though the margin is small.
-- **Water is negligible**, at about £0.02 to £0.05/kg.
+- **Water is negligible**, at about €0.02 to €0.05/kg.
+
+![London LH2 trucking production cost map](<Project/Data_main/Resources/UK/London LH2 trucking production cost.png>)
+
+_Production cost alone (€/kg). It varies far less across the UK than delivered cost does._
+
+All costs are in euros. The parameter spreadsheets mix euro-based hardware costs inherited from GeoH2 with pound-based energy and water prices, so treat the figures as indicative.
 
 Maps and charts for every demand centre are in [`Project/Data_main/Resources/UK`](Project/Data_main/Resources/UK). The cell-level result files are in [`Project/Data_main/Resources`](Project/Data_main/Resources).
 
