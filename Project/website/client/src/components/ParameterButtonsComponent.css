@@ -1,0 +1,22 @@
+/* src/components/ParameterButtonsComponent.css */
+.parameter-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 10px;
+  }
+  
+  .parameter-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .parameter-button:hover {
+    background-color: #0056b3;
+  }
+  
